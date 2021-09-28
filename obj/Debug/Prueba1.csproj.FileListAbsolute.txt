@@ -1,0 +1,14 @@
+C:\Users\jose_\source\repos\Prueba1\Prueba1\obj\Debug\Prueba1.ContactosForm.resources
+C:\Users\jose_\source\repos\Prueba1\Prueba1\obj\Debug\Prueba1.ContactosAgregarForm.resources
+C:\Users\jose_\source\repos\Prueba1\Prueba1\obj\Debug\Prueba1.Properties.Resources.resources
+C:\Users\jose_\source\repos\Prueba1\Prueba1\obj\Debug\Prueba1.csproj.GenerateResource.cache
+C:\Users\jose_\source\repos\Prueba1\Prueba1\obj\Debug\Prueba1.csproj.CoreCompileInputs.cache
+C:\Users\jose_\source\repos\Prueba1\Prueba1\bin\Debug\Prueba1.exe.config
+C:\Users\jose_\source\repos\Prueba1\Prueba1\bin\Debug\Prueba1.exe
+C:\Users\jose_\source\repos\Prueba1\Prueba1\bin\Debug\Prueba1.pdb
+C:\Users\jose_\source\repos\Prueba1\Prueba1\bin\Debug\MySql.Data.dll
+C:\Users\jose_\source\repos\Prueba1\Prueba1\bin\Debug\MySql.Data.xml
+C:\Users\jose_\source\repos\Prueba1\Prueba1\obj\Debug\Prueba1.csproj.CopyComplete
+C:\Users\jose_\source\repos\Prueba1\Prueba1\obj\Debug\Prueba1.exe
+C:\Users\jose_\source\repos\Prueba1\Prueba1\obj\Debug\Prueba1.pdb
+C:\Users\jose_\source\repos\Prueba1\Prueba1\obj\Debug\Prueba1.csproj.AssemblyReference.cache

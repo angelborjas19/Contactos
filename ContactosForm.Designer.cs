@@ -37,6 +37,7 @@ namespace Prueba1
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // button_eliminar
@@ -81,7 +82,8 @@ namespace Prueba1
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4});
+            this.columnHeader4,
+            this.columnHeader5});
             this.listView1.FullRowSelect = true;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(12, 12);
@@ -95,22 +97,27 @@ namespace Prueba1
             // columnHeader1
             // 
             this.columnHeader1.Text = "Nombre";
-            this.columnHeader1.Width = 212;
+            this.columnHeader1.Width = 128;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Email";
-            this.columnHeader2.Width = 158;
+            this.columnHeader2.Width = 122;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Sexo";
-            this.columnHeader3.Width = 110;
+            this.columnHeader3.Text = "Telefono";
+            this.columnHeader3.Width = 113;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Mayor de Edad";
+            this.columnHeader4.Text = "Sexo";
             this.columnHeader4.Width = 126;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Mayor de Edad";
+            this.columnHeader5.Width = 108;
             // 
             // ContactosForm
             // 
@@ -139,6 +146,7 @@ namespace Prueba1
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }
 

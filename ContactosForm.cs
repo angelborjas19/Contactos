@@ -50,12 +50,14 @@ namespace Prueba1
                 int id = Convert.ToInt32(dataRow["id"]);
                 string nombre = Convert.ToString(dataRow["Nombre"]);
                 string email = Convert.ToString(dataRow["Email"]);
+                string telefono = Convert.ToString(dataRow["Telefono"]);
                 string sexo = Convert.ToString(dataRow["Sexo"]);
                 bool mayorDeEdad = Convert.ToBoolean(dataRow["MayorDeEdad"]);
 
                 ListViewItem listViewItem = listView1.Items.Add(nombre);
                 listViewItem.Tag = id;
                 listViewItem.SubItems.Add(email);
+                listViewItem.SubItems.Add(telefono);
                 listViewItem.SubItems.Add(sexo);
 
                 if (mayorDeEdad)

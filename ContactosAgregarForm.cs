@@ -27,6 +27,7 @@ namespace Prueba1
             {
                 textBox_nombre.Text = Convert.ToString(dataRow["Nombre"]);
                 textBox_email.Text = Convert.ToString(dataRow["Email"]);
+                textBox_telefono.Text = Convert.ToString(dataRow["Telefono"]);
                 comboBox_sexo.Text = Convert.ToString(dataRow["Sexo"]);
                 checkBox_MayorDeEdad.Checked = Convert.ToBoolean(dataRow["MayorDeEdad"]);
             }
@@ -36,6 +37,7 @@ namespace Prueba1
         {
             string nombre = textBox_nombre.Text;
             string email = textBox_email.Text;
+            string telefono = textBox_telefono.Text;
             string sexo = comboBox_sexo.Text;
             bool mayorDeEdad = checkBox_MayorDeEdad.Checked;
 
@@ -65,20 +67,26 @@ namespace Prueba1
                 }
             }
 
+            if (string.IsNullOrEmpty(textBox_telefono.Text))
+            {
+                MessageBox.Show("Ingrese el sexo");
+                return;
+            }
+
             if (!comboBox_sexo.Text.Equals("Hombre") && !comboBox_sexo.Text.Equals("Mujer"))
             {
-                MessageBox.Show("Ingresae el sexo");
+                MessageBox.Show("Ingrese el sexo");
                 return;
             }
 
             Datos datos = new Datos();
             if (Id > 0)
             {
-                datos.Editar(nombre, email, sexo, mayorDeEdad, Id);
+                datos.Editar(nombre, email, telefono, sexo, mayorDeEdad, Id);
             }
             else
             {
-                datos.Insertar(nombre, email, sexo, mayorDeEdad);
+                datos.Insertar(nombre, email, telefono, sexo, mayorDeEdad);
             }
 
             DialogResult = DialogResult.OK;

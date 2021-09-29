@@ -76,15 +76,15 @@ namespace Prueba1
             }
         }
 
-        public void Insertar(string nombre, string email, string sexo, bool mayorDeEdad)
+        public void Insertar(string nombre, string email, string telefono, string sexo, bool mayorDeEdad)
         {
             using (var connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
 
                 string query = @"
-                    INSERT INTO contactos (Nombre, Email, Sexo, MayorDeEdad)
-                    VALUES(@nombre, @email, @sexo, @mayorDeEdad)";
+                    INSERT INTO contactos (Nombre, Email, Telefono, Sexo, MayorDeEdad)
+                    VALUES(@nombre, @email, @telefono, @sexo, @mayorDeEdad)";
 
                 using (var command = new MySqlCommand())
                 {
@@ -93,6 +93,7 @@ namespace Prueba1
 
                     command.Parameters.AddWithValue("@nombre", nombre);
                     command.Parameters.AddWithValue("@email", email);
+                    command.Parameters.AddWithValue("@telefono", telefono);
                     command.Parameters.AddWithValue("@sexo", sexo);
                     command.Parameters.AddWithValue("@mayorDeEdad", mayorDeEdad);
 
@@ -101,14 +102,14 @@ namespace Prueba1
             }
         }
 
-        public void Editar(string nombre, string email, string sexo, bool mayorDeEdad, int id)
+        public void Editar(string nombre, string email, string telefono, string sexo, bool mayorDeEdad, int id)
         {
             using (var connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
 
                 string query = @"
-                    UPDATE contactos SET Nombre = @nombre, Email = @email, Sexo = @sexo,
+                    UPDATE contactos SET Nombre = @nombre, Email = @email, Telefono = @telefono, Sexo = @sexo,
                     MayorDeEdad = @mayorDeEdad WHERE ID = @Id;";
 
                 using (var command = new MySqlCommand())
@@ -118,6 +119,7 @@ namespace Prueba1
 
                     command.Parameters.AddWithValue("@nombre", nombre);
                     command.Parameters.AddWithValue("@email", email);
+                    command.Parameters.AddWithValue("@telefono", telefono);
                     command.Parameters.AddWithValue("@sexo", sexo);
                     command.Parameters.AddWithValue("@mayorDeEdad", mayorDeEdad);
                     command.Parameters.AddWithValue("@Id", id);
